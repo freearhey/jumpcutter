@@ -1,6 +1,20 @@
 # jumpcutter
 Automatically edits videos. Explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw
 
+## Usage
+
+### Basic
+
+```sh
+python jumpcutter.py --input_file test.mp4 --output_file test.alter.mp4 --sounded_speed 1 --silent_speed 999999 --frame_margin 2 --frame_rate 24
+```
+
+### With splitting
+
+```sh
+echo 00:10:00 | ./jumpcutter.sh --input_file test.mp4 --output_file test.alter.mp4 --sounded_speed 1 --silent_speed 999999 --frame_margin 2 --frame_rate 24
+```
+
 ## Some heads-up:
 
 It uses Python 3.
